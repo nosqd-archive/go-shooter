@@ -2,9 +2,7 @@ package network
 
 import (
 	"github.com/i582/cfmt/cmd/cfmt"
-	"github.com/nosqd/go-shooter/shooter/packets"
-	c2s2 "github.com/nosqd/go-shooter/shooter/packets/c2s"
-	"github.com/nosqd/go-shooter/shooter/packets/s2c"
+	"github.com/nosqd/go-shooter/shooter/network/packets/c2s"
 	"net"
 )
 
@@ -55,11 +53,9 @@ func (self *PacketHandler) _setupGlobal() {
 
 func (self *PacketHandler) SetupClient() {
 	self._setupGlobal()
-	self.AddHandler(int32(packets.S2CSERVERHELLO), s2c.ServerHelloHandle)
 }
 
 func (self *PacketHandler) SetupServer() {
 	self._setupGlobal()
-	self.AddHandler(int32(packets.C2SCLIENTHELLO), c2s2.ClientHelloHandle)
-	self.AddHandler(int32(packets.C2SPLAYERUDPATE), c2s2.PlayerUpdateHandle)
+	self.AddHandler(int32(1001), c2s.ClientHelloHandle)
 }

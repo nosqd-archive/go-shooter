@@ -4,7 +4,6 @@ import (
 	"github.com/i582/cfmt/cmd/cfmt"
 	"github.com/nosqd/go-shooter/shooter/game"
 	"github.com/nosqd/go-shooter/shooter/network"
-	"github.com/nosqd/go-shooter/shooter/network/packets"
 	"github.com/nosqd/go-shooter/shooter/network/packets/c2s"
 	"io"
 	"net"
@@ -42,5 +41,5 @@ func setup() {
 		cfmt.Printf("[%s] Recieved a packet (size: %d, pid: %d)\n", connection.RemoteAddr().String(), packet.ContentLength, packet.PacketID)
 	})
 
-	packetHandler.AddHandler(int32(packets.C2SCLIENTHELLO), c2s.ClientHelloHandle)
+	packetHandler.AddHandler(int32(1001), c2s.ClientHelloHandle)
 }
