@@ -1,0 +1,10 @@
+/build/client/*
+/build/server/*
+!/build/client/*.dylib
+!/build/client/*.so
+!/build/client/*.dll
+!/build/client/client.ini
+!/build/server/*.dylib
+!/build/server/*.so
+!/build/server/*.dll
+!/build/server/server.ini
