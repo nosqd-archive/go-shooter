@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/ungotitled2.iml" filepath="$PROJECT_DIR$/.idea/ungotitled2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/go-shooter.iml" filepath="$PROJECT_DIR$/.idea/go-shooter.iml" />
     </modules>
   </component>
 </project>
