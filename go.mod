@@ -9,7 +9,8 @@ require (
 )
 
 require (
-	github.com/ebitengine/purego v0.6.0-alpha.1.0.20231122024802-192c5e846faa // indirect
-	github.com/gookit/color v1.3.2 // indirect
-	golang.org/x/sys v0.14.0 // indirect
+	github.com/ebitengine/purego v0.6.0-alpha.2 // indirect
+	github.com/gookit/color v1.5.4 // indirect
+	github.com/xo/terminfo v0.0.0-20210125001918-ca9a967f8778 // indirect
+	golang.org/x/sys v0.16.0 // indirect
 )
